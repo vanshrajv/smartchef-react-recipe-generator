@@ -202,9 +202,8 @@ Possible future features include:
 Add screenshots of your project here:
 
 ```text
-![SmartChef Home](screenshots/home.png)
-![Recipe Page](screenshots/recipes.png)
-![Meal Planner](screenshots/meal-planner.png)
+<img width="1317" height="822" alt="image" src="https://github.com/user-attachments/assets/9b87d67b-ec53-46ce-8064-5dd8d5ac34db" />
+
 ```
 
 ## 👨‍💻 Author
