@@ -1,0 +1,5 @@
+const links = [{ id: "overview", icon: "⌂", label: "Overview" }, { id: "discover", icon: "✦", label: "Discover" }, { id: "planner", icon: "▦", label: "Meal plan" }, { id: "pantry", icon: "◈", label: "My pantry" }, { id: "groceries", icon: "□", label: "Groceries" }];
+function Sidebar({ activePage, setPage, pantryCount, groceryCount }) {
+  return <aside className="sidebar"><button className="brand" onClick={() => setPage("overview")}><span>SC</span><strong>smart<span>chef</span></strong></button><div className="side-label">YOUR KITCHEN</div><nav>{links.map((link) => <button key={link.id} className={activePage === link.id ? "side-link active" : "side-link"} onClick={() => setPage(link.id)}><i>{link.icon}</i>{link.label}{link.id === "pantry" && <b>{pantryCount}</b>}{link.id === "groceries" && <b>{groceryCount}</b>}</button>)}</nav><div className="side-bottom"><div className="streak"><span>☀</span><div><strong>4 day streak</strong><small>Keep cooking!</small></div></div><button className="profile"><span className="avatar">VK</span><span><strong>Vansh's kitchen</strong><small>Personal plan</small></span><em>•••</em></button></div></aside>;
+}
+export default Sidebar;
